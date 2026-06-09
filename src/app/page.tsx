@@ -44,6 +44,7 @@ export default function Home() {
             <a href="#experience" className="hover:text-white transition-colors">Experience</a>
             <a href="#work" className="hover:text-white transition-colors">Work</a>
             <a href="#research" className="hover:text-white transition-colors">Research</a>
+            <a href="#talks" className="hover:text-white transition-colors">Talks</a>
             <a href="#skills" className="hover:text-white transition-colors">Skills</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </div>
@@ -257,6 +258,21 @@ export default function Home() {
           >
             {[
               {
+                period: "2026.02 ~ 2026.05",
+                title: "Partner API Gateway 플랫폼 구축 및 운영",
+                summary: "외부 파트너사의 데이터 및 서비스 접근을 위한 API Gateway 플랫폼 구축 및 운영",
+                points: [
+                  "Kubernetes 기반 API Gateway 운영 환경 구축",
+                  "OAuth2 / JWT 기반 인증 체계 설계·운영, Scope 기반 권한 관리 정책 수립",
+                  "선언적 설정 기반 운영 체계로 신규 서비스 온보딩 시 코드 수정 없이 확장 가능",
+                  "User·Contents·Push 등 다양한 내부 서비스에 대한 통합 API 접근 체계 설계",
+                  "중앙화된 인증·인가 체계로 운영 복잡도와 보안 리스크 감소",
+                ],
+                tags: ["Kubernetes", "API Gateway", "OAuth2", "JWT", "AWS Cognito", "Helm"],
+                gradient: "from-emerald-500 to-teal-500",
+                icon: "🔐",
+              },
+              {
                 period: "2025.03 ~ 2026.01",
                 title: "Health AI Assistant 상품화 및 운영",
                 summary: "Samsung Health 앱 내 개인 맞춤형 건강 인사이트를 제공하는 AI Assistant 상품화 및 글로벌 서비스 운영",
@@ -295,21 +311,6 @@ export default function Home() {
                 tags: ["Gemini", "FastAPI", "MongoDB", "Prompt Engineering"],
                 gradient: "from-cyan-500 to-blue-500",
                 icon: "💬",
-              },
-              {
-                period: "2025.03 ~ 현재",
-                title: "Partner API Gateway 플랫폼 구축 및 운영",
-                summary: "외부 파트너사의 데이터 및 서비스 접근을 위한 API Gateway 플랫폼 구축 및 운영",
-                points: [
-                  "Kubernetes 기반 API Gateway 운영 환경 구축",
-                  "OAuth2 / JWT 기반 인증 체계 설계·운영, Scope 기반 권한 관리 정책 수립",
-                  "선언적 설정 기반 운영 체계로 신규 서비스 온보딩 시 코드 수정 없이 확장 가능",
-                  "User·Contents·Push 등 다양한 내부 서비스에 대한 통합 API 접근 체계 설계",
-                  "중앙화된 인증·인가 체계로 운영 복잡도와 보안 리스크 감소",
-                ],
-                tags: ["Kubernetes", "API Gateway", "OAuth2", "JWT", "AWS Cognito", "Helm"],
-                gradient: "from-emerald-500 to-teal-500",
-                icon: "🔐",
               },
               {
                 period: "2024.11 ~ 2025.04",
@@ -571,6 +572,71 @@ export default function Home() {
                 )}
               </motion.a>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Talks & Activities */}
+      <section id="talks" className="py-32 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            custom={0}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              🎤 Talks & Activities
+            </h2>
+            <p className="text-gray-400">강연, 멘토링, 외부 활동</p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="space-y-6"
+          >
+            <motion.a
+              variants={fadeInUp}
+              custom={1}
+              href="/portfolio/kw-lecture-2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-8 group cursor-pointer block"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-14 h-14 shrink-0 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-2xl">
+                  🎓
+                </div>
+                <div className="flex-1">
+                  <span className="text-xs text-amber-400 font-mono">2026.04 · 광운대학교</span>
+                  <h3 className="text-xl font-semibold mt-1 group-hover:text-amber-300 transition-colors">
+                    광운대학교 특강
+                  </h3>
+                  <p className="text-gray-400 mt-2">
+                    모교 광운대학교에서 AI / LLM 관련 주제로 특강 진행. 학부생들을 대상으로
+                    실무 경험과 진로 인사이트 공유.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["Lecture", "AI / LLM", "Career"].map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 text-xs rounded-full bg-white/5 text-gray-300 border border-white/10"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-4 text-sm text-amber-400 group-hover:text-amber-300 flex items-center gap-1">
+                    📄 강연 자료 보기 →
+                  </div>
+                </div>
+              </div>
+            </motion.a>
           </motion.div>
         </div>
       </section>
