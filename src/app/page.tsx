@@ -73,8 +73,8 @@ export default function Home() {
             AI Engineer @ Samsung Electronics
           </p>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto mb-10">
-            LLM & Recommender System 연구자. 삼성전자 MX사업부 Health Software R&D에서
-            Samsung Health를 위한 LLM 모델을 개발하고 있습니다.
+            LLM & Recommender System 연구자. 삼성전자 MX사업부 Samsung Health 팀
+            Health Platform R&D Group에서 Samsung Health를 위한 LLM 모델을 개발하고 있습니다.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a
@@ -121,8 +121,8 @@ export default function Home() {
                 <HiBriefcase /> Current Role
               </h3>
               <p className="text-gray-300 leading-relaxed">
-                삼성전자 MX사업부 Health Software R&D 그룹에서 Samsung Health를 위한
-                LLM 모델을 개발하고 있습니다. 온디바이스 SLM부터 클라우드 LLM까지,
+                삼성전자 MX사업부 Samsung Health 팀 Health Platform R&D Group에서
+                Samsung Health를 위한 LLM 모델을 개발하고 있습니다. 온디바이스 SLM부터 클라우드 LLM까지,
                 end-to-end로 AI 서비스를 상용화하고 운영하고 있습니다.
               </p>
             </motion.div>
@@ -180,7 +180,7 @@ export default function Home() {
               {
                 year: "2024 ~ 현재",
                 title: "Samsung Electronics MX Division",
-                subtitle: "Health Software R&D Group · AI Engineer",
+                subtitle: "Samsung Health · Health Platform R&D Group · AI Engineer",
                 desc: "Samsung Health LLM/SLM 모델 개발 및 상용화",
                 side: "left",
               },
