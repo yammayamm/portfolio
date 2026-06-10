@@ -79,8 +79,8 @@ export default function Home() {
             AI Platform Developer @ Samsung Electronics
           </p>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto mb-10">
-            LLM & Recommender System 연구자. 삼성전자 MX사업부 Samsung Health 팀
-            Health Platform R&D Group에서 Samsung Health를 위한 LLM 모델을 개발하고 있습니다.
+            On-device SLM부터 Cloud LLM까지 — Healthcare 도메인 특화 LLM의
+            학습·경량화·평가·서빙을 end-to-end로 상용화합니다.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a
@@ -141,19 +141,23 @@ export default function Home() {
               <ul className="text-gray-300 space-y-2">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-indigo-400" />
-                  Large Language Models & RAG
+                  Domain-Specialized LLM / SLM (Healthcare, On-device)
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-purple-400" />
-                  Machine Learning & Deep Learning
+                  Post-training & Alignment (SFT, Instruction Tuning, Guardrail)
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-pink-400" />
-                  Recommender Systems & Graph Neural Networks
+                  Model Compression (LoRA, Quantization, Distillation)
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-blue-400" />
-                  Natural Language Processing
+                  LLM-based Agent & RAG
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-cyan-400" />
+                  Recommender Systems & Graph Neural Networks
                 </li>
               </ul>
               <div className="mt-6 pt-6 border-t border-white/10">
@@ -794,15 +798,6 @@ export default function Home() {
                 link: null,
                 gradient: "from-cyan-500 to-blue-500",
                 icon: "👩‍🏫",
-              },
-              {
-                period: "2021.02 ~ 2021.06",
-                title: "Algorithm Study Group",
-                desc: "학과 학생들과 자료구조·알고리즘 스터디 그룹 운영. 백준/프로그래머스 코딩 테스트 준비 및 GitHub 코드 리뷰.",
-                tags: ["Algorithm", "Study Group", "Mentoring"],
-                link: null,
-                gradient: "from-emerald-500 to-teal-500",
-                icon: "💻",
               },
               {
                 period: "2019.03 ~ 2019.07",
